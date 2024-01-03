@@ -1,9 +1,13 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos5cl7",
+    "Slug": "ngonorrhoeae-inh",
+    "Status": "In progress",
+    "Title": "Growth Inhibitors of Neisseria gonorrhoeae",
+    "Description": [
+        "The authors curated a dataset of 282 compounds from ChEMBL",
+        "of which 160 (56.7%) were labelled as active N. gonorrhoeae inhibitor compounds. They used this dataset to build a na\u00efve Bayesian model and used it to screen a commercial library. With this method",
+        "they identified and validated two hits. We have used the dataset to build a model using Ersilia\u2019s set of AI modelling tools."
+    ],
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +16,11 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "Antimicrobial activity",
+        "ChEMBL"
+    ],
+    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8274436/",
+    "Source Code": "https://github.com/ersilia-os/lazy-qsar",
+    "License": "GPL-3.0"
 }
