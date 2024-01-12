@@ -19,7 +19,7 @@ model_path = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "mode
 
 # my model
 def _smi_to_fps(smiles):
-    mols = [Chem.MolFromSmiles(smi) for smi in smiles]
+    mols = [Chem.MolFromSmiles(str(smi)) for smi in smiles]
     fp = [AllChem.GetMorganFingerprintAsBitVect(mol, 3, nBits=2048) for mol in mols] # gets the vector
     return fp
 
