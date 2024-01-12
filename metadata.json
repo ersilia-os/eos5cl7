@@ -8,14 +8,14 @@
         "of which 160 (56.7%) were labelled as active N. gonorrhoeae inhibitor compounds. They used this dataset to build a na\u00efve Bayesian model and used it to screen a commercial library. With this method",
         "they identified and validated two hits. We have used the dataset to build a model using Ersilia\u2019s set of AI modelling tools."
     ],
-    "Mode": "",
-    "Task": [],
-    "Input": [],
-    "Input Shape": "",
-    "Output": [],
-    "Output Type": [],
-    "Output Shape": "",
-    "Interpretation": "",
+    "Mode": "Retrained",
+    "Task": ["Classification"],
+    "Input": ["Compound"],
+    "Input Shape": "Single",
+    "Output": ["Probability"],
+    "Output Type": ["Float"],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of activity for the inhibition of the Antimicrobial pathogen N. gonorrhoeae",
     "Tag": [
         "Antimicrobial activity",
         "ChEMBL"
