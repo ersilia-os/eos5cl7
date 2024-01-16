@@ -25,6 +25,8 @@ The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%)
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos5cl7)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos5cl7) (AMD64, ARM64)
 
 ## Citation
 
