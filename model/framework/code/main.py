@@ -15,7 +15,7 @@ output_file = sys.argv[2]
 
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "model_eosce3.joblib"))
+model_path = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "model_morgan60.joblib"))
 
 def my_model(smiles_list):
     mdl1 = joblib.load(model_path)
