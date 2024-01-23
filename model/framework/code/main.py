@@ -18,9 +18,9 @@ root = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "model_eosce_full600.joblib"))
 
 def my_model(smiles_list):
-    mdl1 = joblib.load(model_path)
-    y_pred1 = mdl1.predict_proba(smiles_list)[:,1]
-    return y_pred1
+    mdl = joblib.load(model_path)
+    y_pred = mdl.predict_proba(smiles_list)[:,1]
+    return y_pred
 
 # read SMILES from .csv file, assuming one column with header
 with open(input_file, "r") as f:
@@ -38,6 +38,6 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["value"])  # header
+    writer.writerow(["proba1"])  # header
     for o in outputs:
         writer.writerow([o])
