@@ -2,12 +2,7 @@
 import os
 import csv
 import sys
-from rdkit import Chem
-from rdkit.Chem.Descriptors import MolWt
-from rdkit.Chem import AllChem, DataStructs
 import joblib
-import numpy as np 
-import pandas as pd 
 
 # parse arguments
 input_file = sys.argv[1]
@@ -38,6 +33,6 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["proba1"])  # header
+    writer.writerow(["ngonorrhoeae_inhibition_probability"])  # header
     for o in outputs:
         writer.writerow([o])
