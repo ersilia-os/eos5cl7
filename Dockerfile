@@ -3,11 +3,12 @@ MAINTAINER ersilia
 
 RUN pip install rdkit==2023.9.4
 RUN pip install lazyqsar==0.3
-RUN pip install pandas
-RUN pip install numpy
+RUN pip install pandas==2.2.3
+RUN pip install numpy==1.26.4
 RUN pip install xgboost==2.0.3
 RUN pip install joblib==1.2.0
 RUN pip install lightgbm==3.3.5
+RUN pip install scikit-learn==1.2.2
 
 WORKDIR /repo
 COPY . /repo
