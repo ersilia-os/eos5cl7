@@ -1,6 +1,7 @@
 FROM bentoml/model-server:0.11.0-py310
 MAINTAINER ersilia
 
+RUN apt-get update && apt-get install -y libgomp1 && rm -rf /var/lib/apt/lists/*
 RUN pip install rdkit==2023.9.4
 RUN pip install lazyqsar==0.3
 RUN pip install pandas==2.2.3
