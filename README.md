@@ -41,7 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `49`
 - **Environment Size (Mb):** `7513`
+- **Image Size (Mb):** `7461.1`
 
+**Computational Performance (seconds):**
+- 10 inputs: `37.02`
+- 100 inputs: `26.91`
+- 10000 inputs: `543.24`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
