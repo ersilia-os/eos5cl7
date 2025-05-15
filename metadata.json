@@ -1,36 +1,47 @@
 {
     "Identifier": "eos5cl7",
-    "Slug": "ngonorrhoeae-inh",
+    "Slug": "ngonorrhoeae-inhibition",
     "Status": "Ready",
     "Title": "Growth Inhibitors of Neisseria gonorrhoeae",
-    "Description": "The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%) were labeled as active N. gonorrhoeae inhibitor compounds. They used this dataset to build a na\u00efve Bayesian model and used it to screen a commercial library. With this method,they identified and validated two hits. We have used the dataset to build a model using LazyQSAR with Ersilia Compound Embeddings as molecular descriptors. LazyQSAR is an AutoML Ersilia-developed library.",
-    "Mode": "Retrained",
-    "Task": [
-        "Classification"
-    ],
+    "Description": "The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%) were labeled as active N. gonorrhoeae inhibitor compounds. They used this dataset to build a na\u00efve Bayesian model and used it to screen a commercial library. With this method, they identified and validated two hits. We have used the dataset to build a model using LazyQSAR with Ersilia Compound Embeddings as molecular descriptors. LazyQSAR is an AutoML Ersilia-developed library.\n",
+    "Source": "Local",
+    "Source Type": "Internal",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "Gonorrhea"
+    ],
+    "Target Organism": [
+        "Neisseria gonorrhoeae"
+    ],
     "Output": [
-        "Probability"
+        "Score"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
-    "Interpretation": "Probability of activity for the inhibition of the Antimicrobial pathogen N. gonorrhoeae",
+    "Output Dimension": 1,
+    "Output Consistency": "Fixed",
+    "Interpretation": "Probability of activity for the inhibition of the pathogen N. gonorrhoeae",
     "Tag": [
         "Antimicrobial activity",
         "ChEMBL",
         "N.gonorrhoeae"
     ],
     "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8274436/",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2020,
     "Source Code": "https://github.com/ersilia-os/lazy-qsar",
-    "License": "GPL-3.0",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip",
+    "License": "GPL-3.0-only",
+    "Contributor": "Richiio",
+    "Incorporation Date": "2024-01-03",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5cl7",
     "Docker Architecture": [
         "AMD64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip",
+    "Deployment": [
+        "Local"
     ]
 }
