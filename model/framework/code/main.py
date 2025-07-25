@@ -2,7 +2,14 @@
 import os
 import csv
 import sys
-import joblib
+import lazyqsar as lq
+
+from chemprop import featurizers, nn
+from chemprop.data import BatchMolGraph
+from chemprop.nn import RegressionFFN
+from chemprop.models import MPNN
+import torch
+from chemeleon_fingerprint import CheMeleonFingerprint
 
 # parse arguments
 input_file = sys.argv[1]
@@ -10,11 +17,15 @@ output_file = sys.argv[2]
 
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "model_eosce_full600.joblib"))
+model_path = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "CheMeleon_LQ_model"))
 
 def my_model(smiles_list):
-    mdl = joblib.load(model_path)
-    y_pred = mdl.predict_proba(smiles_list)[:,1]
+    # Chemeleon embeddings
+    chemeleon_fingerprint = CheMeleonFingerprint()
+    X = chemeleon_fingerprint(smiles_list)
+    # Predictions
+    model =lq.LazyBinaryClassifier.load_model(model_path)
+    y_pred = model.predict_proba(X)[:,1]
     return y_pred
 
 # read SMILES from .csv file, assuming one column with header
