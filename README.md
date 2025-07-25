@@ -2,8 +2,7 @@
 
 The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%) were labeled as active N. gonorrhoeae inhibitor compounds. They used this dataset to build a naïve Bayesian model and used it to screen a commercial library. With this method, they identified and validated two hits. We have used the dataset to build a model using LazyQSAR with CheMeleon Embeddings as molecular descriptors.
 
-This model was incorporated on 2024-01-03.
-
+This model was incorporated on 2024-01-03.Last packaged on 2025-07-25.
 
 ## Information
 ### Identifiers
@@ -36,18 +35,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `Internal`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos5cl7](https://hub.docker.com/r/ersiliaos/eos5cl7)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `115`
 - **Environment Size (Mb):** `6638`
-- **Image Size (Mb):** `7461.1`
+- **Image Size (Mb):** `6766.57`
 
 **Computational Performance (seconds):**
-- 10 inputs: `37.02`
-- 100 inputs: `26.91`
-- 10000 inputs: `543.24`
+- 10 inputs: `32.37`
+- 100 inputs: `24.11`
+- 10000 inputs: `409.94`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
