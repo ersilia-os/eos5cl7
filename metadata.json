@@ -39,7 +39,8 @@
     "License": "GPL-3.0-only",
     "Contributor": "Richiio",
     "Incorporation Date": "2024-01-03",
-    "Last Packaging Date": "2025-07-25",
+    "Last Packaging Date": "2025-08-27",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5cl7",
     "Docker Architecture": [
@@ -48,10 +49,10 @@
     ],
     "Model Size": 114.0,
     "Environment Size": 7985.0,
-    "Image Size": 6766.57,
-    "Computational Performance 1": 32.37,
-    "Computational Performance 2": 22.27,
-    "Computational Performance 3": 24.11,
-    "Computational Performance 4": 94.19,
-    "Computational Performance 5": 409.94
+    "Image Size": 8111.46,
+    "Computational Performance 1": 32.39,
+    "Computational Performance 2": 22.19,
+    "Computational Performance 3": 24.23,
+    "Computational Performance 4": 89.53,
+    "Computational Performance 5": 396.03
 }
