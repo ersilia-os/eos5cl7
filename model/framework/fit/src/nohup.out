@@ -1,0 +1,484 @@
+nohup: ignoring input
+faiss is not available; subset maker will not work until it is installed
+umap is not available; subset maker umap will not work until it is installed
+Crossvalidation
+Transforming CheMeleon descriptors in chunks of 100:   0%|          | 0/3 [00:00<?, ?it/s]Transforming CheMeleon descriptors in chunks of 100:  33%|███▎      | 1/3 [00:01<00:03,  1.90s/it]Transforming CheMeleon descriptors in chunks of 100:  67%|██████▋   | 2/3 [00:03<00:01,  1.64s/it]Transforming CheMeleon descriptors in chunks of 100: 100%|██████████| 3/3 [00:04<00:00,  1.33s/it]Transforming CheMeleon descriptors in chunks of 100: 100%|██████████| 3/3 [00:04<00:00,  1.44s/it]
+Quickly deciding the max number of samples to use for the binary classifier.
+Decided to use max samples: 10000
+Total samples: 212, positive samples: 116, negative samples: 96
+Maximum samples per partition: 10000, minimum samples per partition: 30
+Positive proportion: 0.55
+Original positive samples: 116, total samples: 212
+Maximum samples: 10000
+Sampling 116 positive and 96 negative samples from 212 total samples.
+  0%|          | 0/1000 [00:00<?, ?it/s]  1%|          | 10/1000 [00:00<00:01, 698.88it/s]
+Unique sampled indices matrix shape: (1, 212)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.25it/s]
+Indices matrix shape after redundancy removal: (1, 212)
+Original positive negative balance: positive 116, negative 96
+Avg positive samples: 116.0, avg negative samples: 96.0
+Fitting model on 212 samples, positive samples: 116, negative samples: 96, number of features 1882
+Deciding whether to use PCA for the binary classifier.
+Evaluating PCA components:   0%|          | 0/1 [00:00<?, ?it/s]/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Evaluating PCA components: 100%|██████████| 1/1 [00:04<00:00,  4.65s/it]Evaluating PCA components: 100%|██████████| 1/1 [00:04<00:00,  4.65s/it]
+Evaluating without PCA: 0it [00:00, ?it/s]Evaluating without PCA: 1it [00:00,  1.83it/s]Evaluating without PCA: 2it [00:01,  1.36it/s]Evaluating without PCA: 3it [00:01,  1.78it/s]Evaluating without PCA: 3it [00:02,  1.31it/s]
+INFO:flaml.default.suggest:metafeature distance: 1.8959572567198582
+[I 2025-08-29 18:38:15,323] A new study created in memory with name: no-name-aa12af03-11a8-4972-9656-c89bcbca7429
+[I 2025-08-29 18:38:19,110] Trial 0 finished with value: 0.8694923371647509 and parameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'max_leaf_nodes': 1156, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8694923371647509.
+[I 2025-08-29 18:38:25,024] Trial 1 finished with value: 0.8694923371647509 and parameters: {'n_estimators': 476, 'max_features': 0.4253823424614421, 'max_leaf_nodes': 679, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8694923371647509.
+[I 2025-08-29 18:38:28,202] Trial 2 finished with value: 0.8747605363984675 and parameters: {'n_estimators': 521, 'max_features': 0.1116027783762826, 'max_leaf_nodes': 216, 'criterion': 'entropy'}. Best is trial 2 with value: 0.8747605363984675.
+[I 2025-08-29 18:38:32,931] Trial 3 finished with value: 0.8675766283524905 and parameters: {'n_estimators': 412, 'max_features': 0.39200309009026957, 'max_leaf_nodes': 523, 'criterion': 'entropy'}. Best is trial 2 with value: 0.8747605363984675.
+[I 2025-08-29 18:38:35,157] Trial 4 finished with value: 0.8759578544061304 and parameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1089, 'criterion': 'entropy'}. Best is trial 4 with value: 0.8759578544061304.
+[I 2025-08-29 18:38:38,979] Trial 5 pruned. 
+[I 2025-08-29 18:38:38,979] Trial 6 pruned. 
+[I 2025-08-29 18:38:38,979] Trial 7 pruned. 
+[I 2025-08-29 18:38:38,979] Trial 8 pruned. 
+[I 2025-08-29 18:38:38,979] Trial 9 pruned. 
+Best PCA score: 0.7802, No PCA score: 0.7298
+PCA decision: True
+Suggested zero-shot hyperparameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'criterion': 'entropy', 'max_leaf_nodes': 1156, 'random_state': 12032022, 'verbose': 0, 'class_weight': 'balanced_subsample'}
+Fitting...
+Early stopping: No significant improvement in the last 5 trials.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Best hyperparameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1089, 'criterion': 'entropy', 'n_jobs': 8, 'random_state': 42, 'class_weight': 'balanced_subsample'}, Inner hyperparameter AUROC: 0.8759578544061304
+Internal AUROC CV-0: 0.8642241379310345
+Internal AUROC CV-1: 0.8721264367816092
+Internal AUROC CV-2: 0.8512931034482759
+Logistic regression for calibration...
+Calibration based on logistic regression fit done.
+Average AUROC: 0.8625478927203064
+Model fitted.
+Fitting completed in 35.22 seconds.
+[VarianceThreshold(threshold=0)] BaseRandomForestBinaryClassifier(num_trials=10, pca=None, timeout=120)
+Predicting chunks...: 0it [00:00, ?it/s]Predicting chunks...: 1it [00:00, 21.12it/s]
+Fold 0 AUROC 0.9210144927536231
+Quickly deciding the max number of samples to use for the binary classifier.
+Decided to use max samples: 10000
+Total samples: 212, positive samples: 117, negative samples: 95
+Maximum samples per partition: 10000, minimum samples per partition: 30
+Positive proportion: 0.55
+Original positive samples: 117, total samples: 212
+Maximum samples: 10000
+Sampling 117 positive and 95 negative samples from 212 total samples.
+  0%|          | 0/1000 [00:00<?, ?it/s]  1%|          | 10/1000 [00:00<00:00, 1763.87it/s]
+Unique sampled indices matrix shape: (1, 212)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 73.22it/s]
+Indices matrix shape after redundancy removal: (1, 212)
+Original positive negative balance: positive 117, negative 95
+Avg positive samples: 117.0, avg negative samples: 95.0
+Fitting model on 212 samples, positive samples: 117, negative samples: 95, number of features 1884
+Deciding whether to use PCA for the binary classifier.
+Evaluating PCA components:   0%|          | 0/1 [00:00<?, ?it/s]/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Evaluating PCA components: 100%|██████████| 1/1 [00:07<00:00,  7.14s/it]Evaluating PCA components: 100%|██████████| 1/1 [00:07<00:00,  7.14s/it]
+Evaluating without PCA: 0it [00:00, ?it/s]Evaluating without PCA: 1it [00:00,  2.60it/s]Evaluating without PCA: 2it [00:00,  2.36it/s]Evaluating without PCA: 3it [00:01,  2.39it/s]Evaluating without PCA: 3it [00:01,  1.90it/s]
+INFO:flaml.default.suggest:metafeature distance: 1.9113124961058114
+[I 2025-08-29 18:38:52,318] A new study created in memory with name: no-name-d96f830a-6838-4820-87c6-3a5c0d14cff7
+[I 2025-08-29 18:38:56,618] Trial 0 finished with value: 0.8409961685823756 and parameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'max_leaf_nodes': 1156, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8409961685823756.
+[I 2025-08-29 18:39:02,781] Trial 1 finished with value: 0.8477011494252874 and parameters: {'n_estimators': 476, 'max_features': 0.4253823424614421, 'max_leaf_nodes': 679, 'criterion': 'entropy'}. Best is trial 1 with value: 0.8477011494252874.
+[I 2025-08-29 18:39:05,363] Trial 2 finished with value: 0.8414750957854406 and parameters: {'n_estimators': 521, 'max_features': 0.1116027783762826, 'max_leaf_nodes': 216, 'criterion': 'entropy'}. Best is trial 1 with value: 0.8477011494252874.
+[I 2025-08-29 18:39:10,529] Trial 3 finished with value: 0.842911877394636 and parameters: {'n_estimators': 412, 'max_features': 0.39200309009026957, 'max_leaf_nodes': 523, 'criterion': 'entropy'}. Best is trial 1 with value: 0.8477011494252874.
+[I 2025-08-29 18:39:13,123] Trial 4 finished with value: 0.8371647509578546 and parameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1089, 'criterion': 'entropy'}. Best is trial 1 with value: 0.8477011494252874.
+[I 2025-08-29 18:39:16,473] Trial 5 pruned. 
+[I 2025-08-29 18:39:16,473] Trial 6 pruned. 
+[I 2025-08-29 18:39:16,473] Trial 7 pruned. 
+[I 2025-08-29 18:39:16,473] Trial 8 pruned. 
+[I 2025-08-29 18:39:16,473] Trial 9 pruned. 
+Best PCA score: 0.7232, No PCA score: 0.7659
+PCA decision: False
+Suggested zero-shot hyperparameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'criterion': 'entropy', 'max_leaf_nodes': 1156, 'random_state': 12032022, 'verbose': 0, 'class_weight': 'balanced_subsample'}
+Fitting...
+Early stopping: No significant improvement in the last 5 trials.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Best hyperparameters: {'n_estimators': 476, 'max_features': 0.4253823424614421, 'max_leaf_nodes': 679, 'criterion': 'entropy', 'n_jobs': 8, 'random_state': 42, 'class_weight': 'balanced_subsample'}, Inner hyperparameter AUROC: 0.8477011494252874
+Internal AUROC CV-0: 0.8448275862068966
+Internal AUROC CV-1: 0.7708333333333333
+Internal AUROC CV-2: 0.8484195402298851
+Logistic regression for calibration...
+Calibration based on logistic regression fit done.
+Average AUROC: 0.821360153256705
+Model fitted.
+Fitting completed in 40.99 seconds.
+[VarianceThreshold(threshold=0)] BaseRandomForestBinaryClassifier(num_trials=10, pca=None, timeout=120)
+Predicting chunks...: 0it [00:00, ?it/s]Predicting chunks...: 1it [00:00, 15.56it/s]
+Fold 1 AUROC 0.8922413793103448
+Quickly deciding the max number of samples to use for the binary classifier.
+Decided to use max samples: 10000
+Total samples: 212, positive samples: 117, negative samples: 95
+Maximum samples per partition: 10000, minimum samples per partition: 30
+Positive proportion: 0.55
+Original positive samples: 117, total samples: 212
+Maximum samples: 10000
+Sampling 117 positive and 95 negative samples from 212 total samples.
+  0%|          | 0/1000 [00:00<?, ?it/s]  1%|          | 10/1000 [00:00<00:00, 1895.05it/s]
+Unique sampled indices matrix shape: (1, 212)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 77.69it/s]
+Indices matrix shape after redundancy removal: (1, 212)
+Original positive negative balance: positive 117, negative 95
+Avg positive samples: 117.0, avg negative samples: 95.0
+Fitting model on 212 samples, positive samples: 117, negative samples: 95, number of features 1880
+Deciding whether to use PCA for the binary classifier.
+Evaluating PCA components:   0%|          | 0/1 [00:00<?, ?it/s]/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Evaluating PCA components: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it]Evaluating PCA components: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it]
+Evaluating without PCA: 0it [00:00, ?it/s]Evaluating without PCA: 1it [00:00,  2.98it/s]Evaluating without PCA: 2it [00:00,  2.27it/s]Evaluating without PCA: 3it [00:01,  2.37it/s]Evaluating without PCA: 3it [00:01,  1.90it/s]
+INFO:flaml.default.suggest:metafeature distance: 1.8806024975066393
+[I 2025-08-29 18:39:27,858] A new study created in memory with name: no-name-d78d91bb-49b4-4dbb-9b34-0a304b34f4ce
+[I 2025-08-29 18:39:31,522] Trial 0 finished with value: 0.850095785440613 and parameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'max_leaf_nodes': 1156, 'criterion': 'entropy'}. Best is trial 0 with value: 0.850095785440613.
+[I 2025-08-29 18:39:37,936] Trial 1 finished with value: 0.8460249042145594 and parameters: {'n_estimators': 476, 'max_features': 0.4253823424614421, 'max_leaf_nodes': 679, 'criterion': 'entropy'}. Best is trial 0 with value: 0.850095785440613.
+[I 2025-08-29 18:39:41,128] Trial 2 finished with value: 0.8500957854406129 and parameters: {'n_estimators': 521, 'max_features': 0.1116027783762826, 'max_leaf_nodes': 216, 'criterion': 'entropy'}. Best is trial 0 with value: 0.850095785440613.
+[I 2025-08-29 18:39:46,108] Trial 3 finished with value: 0.850095785440613 and parameters: {'n_estimators': 412, 'max_features': 0.39200309009026957, 'max_leaf_nodes': 523, 'criterion': 'entropy'}. Best is trial 0 with value: 0.850095785440613.
+[I 2025-08-29 18:39:48,582] Trial 4 finished with value: 0.8570402298850576 and parameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1089, 'criterion': 'entropy'}. Best is trial 4 with value: 0.8570402298850576.
+[I 2025-08-29 18:39:52,060] Trial 5 pruned. 
+[I 2025-08-29 18:39:52,061] Trial 6 pruned. 
+[I 2025-08-29 18:39:52,061] Trial 7 pruned. 
+[I 2025-08-29 18:39:52,061] Trial 8 pruned. 
+[I 2025-08-29 18:39:52,061] Trial 9 pruned. 
+Best PCA score: 0.7602, No PCA score: 0.7264
+PCA decision: True
+Suggested zero-shot hyperparameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'criterion': 'entropy', 'max_leaf_nodes': 1156, 'random_state': 12032022, 'verbose': 0, 'class_weight': 'balanced_subsample'}
+Fitting...
+Early stopping: No significant improvement in the last 5 trials.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Best hyperparameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1089, 'criterion': 'entropy', 'n_jobs': 8, 'random_state': 42, 'class_weight': 'balanced_subsample'}, Inner hyperparameter AUROC: 0.8570402298850576
+Internal AUROC CV-0: 0.8441091954022989
+Internal AUROC CV-1: 0.8311781609195401
+Internal AUROC CV-2: 0.8117816091954023
+Logistic regression for calibration...
+Calibration based on logistic regression fit done.
+Average AUROC: 0.8290229885057472
+Model fitted.
+Fitting completed in 32.03 seconds.
+[VarianceThreshold(threshold=0)] BaseRandomForestBinaryClassifier(num_trials=10, pca=None, timeout=120)
+Predicting chunks...: 0it [00:00, ?it/s]Predicting chunks...: 1it [00:00, 18.33it/s]
+Fold 2 AUROC 0.8908045977011494
+Quickly deciding the max number of samples to use for the binary classifier.
+Decided to use max samples: 10000
+Total samples: 212, positive samples: 117, negative samples: 95
+Maximum samples per partition: 10000, minimum samples per partition: 30
+Positive proportion: 0.55
+Original positive samples: 117, total samples: 212
+Maximum samples: 10000
+Sampling 117 positive and 95 negative samples from 212 total samples.
+  0%|          | 0/1000 [00:00<?, ?it/s]  1%|          | 10/1000 [00:00<00:00, 1853.18it/s]
+Unique sampled indices matrix shape: (1, 212)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 75.44it/s]
+Indices matrix shape after redundancy removal: (1, 212)
+Original positive negative balance: positive 117, negative 95
+Avg positive samples: 117.0, avg negative samples: 95.0
+Fitting model on 212 samples, positive samples: 117, negative samples: 95, number of features 1884
+Deciding whether to use PCA for the binary classifier.
+Evaluating PCA components:   0%|          | 0/1 [00:00<?, ?it/s]/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Evaluating PCA components: 100%|██████████| 1/1 [00:05<00:00,  5.62s/it]Evaluating PCA components: 100%|██████████| 1/1 [00:05<00:00,  5.62s/it]
+Evaluating without PCA: 0it [00:00, ?it/s]Evaluating without PCA: 1it [00:00,  2.37it/s]Evaluating without PCA: 2it [00:00,  2.11it/s]Evaluating without PCA: 3it [00:01,  2.19it/s]Evaluating without PCA: 3it [00:01,  1.81it/s]
+INFO:flaml.default.suggest:metafeature distance: 1.9113124961058114
+[I 2025-08-29 18:40:04,031] A new study created in memory with name: no-name-c8157850-8ecd-4c87-8338-e9168e366136
+[I 2025-08-29 18:40:07,917] Trial 0 finished with value: 0.8218390804597702 and parameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'max_leaf_nodes': 1156, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8218390804597702.
+[I 2025-08-29 18:40:13,683] Trial 1 finished with value: 0.8172892720306514 and parameters: {'n_estimators': 476, 'max_features': 0.4253823424614421, 'max_leaf_nodes': 679, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8218390804597702.
+[I 2025-08-29 18:40:16,832] Trial 2 finished with value: 0.8170498084291188 and parameters: {'n_estimators': 521, 'max_features': 0.1116027783762826, 'max_leaf_nodes': 216, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8218390804597702.
+[I 2025-08-29 18:40:21,849] Trial 3 finished with value: 0.8194444444444445 and parameters: {'n_estimators': 412, 'max_features': 0.39200309009026957, 'max_leaf_nodes': 523, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8218390804597702.
+[I 2025-08-29 18:40:23,928] Trial 4 finished with value: 0.8230363984674329 and parameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1089, 'criterion': 'entropy'}. Best is trial 4 with value: 0.8230363984674329.
+[I 2025-08-29 18:40:27,804] Trial 5 pruned. 
+[I 2025-08-29 18:40:27,804] Trial 6 pruned. 
+[I 2025-08-29 18:40:27,804] Trial 7 pruned. 
+[I 2025-08-29 18:40:27,804] Trial 8 pruned. 
+[I 2025-08-29 18:40:27,804] Trial 9 pruned. 
+Best PCA score: 0.8008, No PCA score: 0.7433
+PCA decision: True
+Suggested zero-shot hyperparameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'criterion': 'entropy', 'max_leaf_nodes': 1156, 'random_state': 12032022, 'verbose': 0, 'class_weight': 'balanced_subsample'}
+Fitting...
+Early stopping: No significant improvement in the last 5 trials.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Best hyperparameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1089, 'criterion': 'entropy', 'n_jobs': 8, 'random_state': 42, 'class_weight': 'balanced_subsample'}, Inner hyperparameter AUROC: 0.8230363984674329
+Internal AUROC CV-0: 0.8139367816091954
+Internal AUROC CV-1: 0.8742816091954023
+Internal AUROC CV-2: 0.8347701149425288
+Logistic regression for calibration...
+Calibration based on logistic regression fit done.
+Average AUROC: 0.8409961685823756
+Model fitted.
+Fitting completed in 35.56 seconds.
+[VarianceThreshold(threshold=0)] BaseRandomForestBinaryClassifier(num_trials=10, pca=None, timeout=120)
+Predicting chunks...: 0it [00:00, ?it/s]Predicting chunks...: 1it [00:00, 17.64it/s]
+Fold 3 AUROC 0.8261494252873562
+Quickly deciding the max number of samples to use for the binary classifier.
+Decided to use max samples: 10000
+Total samples: 212, positive samples: 117, negative samples: 95
+Maximum samples per partition: 10000, minimum samples per partition: 30
+Positive proportion: 0.55
+Original positive samples: 117, total samples: 212
+Maximum samples: 10000
+Sampling 117 positive and 95 negative samples from 212 total samples.
+  0%|          | 0/1000 [00:00<?, ?it/s]  1%|          | 10/1000 [00:00<00:00, 1833.98it/s]
+Unique sampled indices matrix shape: (1, 212)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 74.77it/s]
+Indices matrix shape after redundancy removal: (1, 212)
+Original positive negative balance: positive 117, negative 95
+Avg positive samples: 117.0, avg negative samples: 95.0
+Fitting model on 212 samples, positive samples: 117, negative samples: 95, number of features 1878
+Deciding whether to use PCA for the binary classifier.
+Evaluating PCA components:   0%|          | 0/1 [00:00<?, ?it/s]/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Evaluating PCA components: 100%|██████████| 1/1 [00:03<00:00,  3.75s/it]Evaluating PCA components: 100%|██████████| 1/1 [00:03<00:00,  3.75s/it]
+Evaluating without PCA: 0it [00:00, ?it/s]Evaluating without PCA: 1it [00:00,  2.71it/s]Evaluating without PCA: 2it [00:00,  2.43it/s]Evaluating without PCA: 3it [00:01,  1.50it/s]Evaluating without PCA: 3it [00:02,  1.13it/s]
+INFO:flaml.default.suggest:metafeature distance: 1.8652482303245328
+[I 2025-08-29 18:40:38,787] A new study created in memory with name: no-name-6233993b-f935-4330-8204-fecc37ca20f1
+[I 2025-08-29 18:40:42,921] Trial 0 finished with value: 0.8685344827586207 and parameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'max_leaf_nodes': 1156, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8685344827586207.
+[I 2025-08-29 18:40:48,906] Trial 1 finished with value: 0.8666187739463601 and parameters: {'n_estimators': 476, 'max_features': 0.4253823424614421, 'max_leaf_nodes': 679, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8685344827586207.
+[I 2025-08-29 18:40:52,160] Trial 2 finished with value: 0.8668582375478927 and parameters: {'n_estimators': 521, 'max_features': 0.1116027783762826, 'max_leaf_nodes': 216, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8685344827586207.
+[I 2025-08-29 18:40:57,386] Trial 3 finished with value: 0.8639846743295019 and parameters: {'n_estimators': 412, 'max_features': 0.39200309009026957, 'max_leaf_nodes': 523, 'criterion': 'entropy'}. Best is trial 0 with value: 0.8685344827586207.
+[I 2025-08-29 18:40:59,446] Trial 4 finished with value: 0.8704501915708812 and parameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1089, 'criterion': 'entropy'}. Best is trial 4 with value: 0.8704501915708812.
+[I 2025-08-29 18:41:03,277] Trial 5 pruned. 
+[I 2025-08-29 18:41:03,277] Trial 6 pruned. 
+[I 2025-08-29 18:41:03,277] Trial 7 pruned. 
+[I 2025-08-29 18:41:03,277] Trial 8 pruned. 
+[I 2025-08-29 18:41:03,277] Trial 9 pruned. 
+Best PCA score: 0.7882, No PCA score: 0.7286
+PCA decision: True
+Suggested zero-shot hyperparameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'criterion': 'entropy', 'max_leaf_nodes': 1156, 'random_state': 12032022, 'verbose': 0, 'class_weight': 'balanced_subsample'}
+Fitting...
+Early stopping: No significant improvement in the last 5 trials.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Best hyperparameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1089, 'criterion': 'entropy', 'n_jobs': 8, 'random_state': 42, 'class_weight': 'balanced_subsample'}, Inner hyperparameter AUROC: 0.8704501915708812
+Internal AUROC CV-0: 0.8692528735632183
+Internal AUROC CV-1: 0.8599137931034483
+Internal AUROC CV-2: 0.8520114942528737
+Logistic regression for calibration...
+Calibration based on logistic regression fit done.
+Average AUROC: 0.8603927203065135
+Model fitted.
+Fitting completed in 35.38 seconds.
+[VarianceThreshold(threshold=0)] BaseRandomForestBinaryClassifier(num_trials=10, pca=None, timeout=120)
+Predicting chunks...: 0it [00:00, ?it/s]Predicting chunks...: 1it [00:00, 17.86it/s]
+Fold 4 AUROC 0.769396551724138
+MEAN AUC:  0.8599212893553224 0.05489264682335925
+training final model
+Quickly deciding the max number of samples to use for the binary classifier.
+Decided to use max samples: 10000
+Total samples: 265, positive samples: 146, negative samples: 119
+Maximum samples per partition: 10000, minimum samples per partition: 30
+Positive proportion: 0.55
+Original positive samples: 146, total samples: 265
+Maximum samples: 10000
+Sampling 146 positive and 119 negative samples from 265 total samples.
+  0%|          | 0/1000 [00:00<?, ?it/s]  1%|          | 10/1000 [00:00<00:00, 1475.00it/s]
+Unique sampled indices matrix shape: (1, 265)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 65.34it/s]
+Indices matrix shape after redundancy removal: (1, 265)
+Original positive negative balance: positive 146, negative 119
+Avg positive samples: 146.0, avg negative samples: 119.0
+Fitting model on 265 samples, positive samples: 146, negative samples: 119, number of features 1889
+Deciding whether to use PCA for the binary classifier.
+Evaluating PCA components:   0%|          | 0/1 [00:00<?, ?it/s]/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/home/gturon/miniconda3/envs/lazyqsar/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Evaluating PCA components: 100%|██████████| 1/1 [00:05<00:00,  5.39s/it]Evaluating PCA components: 100%|██████████| 1/1 [00:05<00:00,  5.39s/it]
+Evaluating without PCA: 0it [00:00, ?it/s]Evaluating without PCA: 1it [00:00,  2.11it/s]Evaluating without PCA: 2it [00:01,  1.84it/s]Evaluating without PCA: 3it [00:01,  1.99it/s]Evaluating without PCA: 3it [00:02,  1.34it/s]
+INFO:flaml.default.suggest:metafeature distance: 1.9496315747934274
+[I 2025-08-29 18:41:15,428] A new study created in memory with name: no-name-a4abffe3-f4b9-4d5a-b55a-f8a23dad8cbe
+[I 2025-08-29 18:41:21,024] Trial 0 finished with value: 0.881981981981982 and parameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'max_leaf_nodes': 1156, 'criterion': 'entropy'}. Best is trial 0 with value: 0.881981981981982.
+[I 2025-08-29 18:41:28,718] Trial 1 finished with value: 0.8813813813813813 and parameters: {'n_estimators': 476, 'max_features': 0.4253823424614421, 'max_leaf_nodes': 720, 'criterion': 'entropy'}. Best is trial 0 with value: 0.881981981981982.
+[I 2025-08-29 18:41:31,677] Trial 2 finished with value: 0.8876876876876878 and parameters: {'n_estimators': 521, 'max_features': 0.1116027783762826, 'max_leaf_nodes': 260, 'criterion': 'entropy'}. Best is trial 2 with value: 0.8876876876876878.
+[I 2025-08-29 18:41:37,954] Trial 3 finished with value: 0.8794294294294295 and parameters: {'n_estimators': 412, 'max_features': 0.39200309009026957, 'max_leaf_nodes': 571, 'criterion': 'entropy'}. Best is trial 2 with value: 0.8876876876876878.
+[I 2025-08-29 18:41:40,065] Trial 4 finished with value: 0.8816816816816816 and parameters: {'n_estimators': 543, 'max_features': 0.058127631650270836, 'max_leaf_nodes': 1097, 'criterion': 'entropy'}. Best is trial 2 with value: 0.8876876876876878.
+[I 2025-08-29 18:41:43,531] Trial 5 pruned. 
+[I 2025-08-29 18:41:43,532] Trial 6 pruned. 
+[I 2025-08-29 18:41:43,532] Trial 7 pruned. 
+[I 2025-08-29 18:41:43,532] Trial 8 pruned. 
+[I 2025-08-29 18:41:43,532] Trial 9 pruned. 
+Best PCA score: 0.7828, No PCA score: 0.7320
+PCA decision: True
+Suggested zero-shot hyperparameters: {'n_estimators': 501, 'max_features': 0.24484242524861066, 'criterion': 'entropy', 'max_leaf_nodes': 1156, 'random_state': 12032022, 'verbose': 0, 'class_weight': 'balanced_subsample'}
+Fitting...
+Early stopping: No significant improvement in the last 5 trials.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Skipping trial due to early stopping criteria.
+Best hyperparameters: {'n_estimators': 521, 'max_features': 0.1116027783762826, 'max_leaf_nodes': 260, 'criterion': 'entropy', 'n_jobs': 8, 'random_state': 42, 'class_weight': 'balanced_subsample'}, Inner hyperparameter AUROC: 0.8876876876876878
+Internal AUROC CV-0: 0.8833333333333334
+Internal AUROC CV-1: 0.872972972972973
+Internal AUROC CV-2: 0.8513513513513513
+Logistic regression for calibration...
+Calibration based on logistic regression fit done.
+Average AUROC: 0.8692192192192193
+Model fitted.
+Fitting completed in 40.20 seconds.
+LazyQSAR Saving model to ../models
+Model directory already exists: ../models, deleting it...
+Creating model directory: ../models
+Saving reducer to ../models/partition_000/reducer.joblib
+Saving model to ../models/partition_000
+Saving done!
