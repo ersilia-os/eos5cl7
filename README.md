@@ -1,6 +1,6 @@
 # Growth Inhibitors of Neisseria gonorrhoeae
 
-The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%) were labeled as active N. gonorrhoeae inhibitor compounds. They used this dataset to build a naïve Bayesian model and used it to screen a commercial library. With this method, they identified and validated two hits. We have used the dataset to build a model using LazyQSAR with CheMeleon Embeddings as molecular descriptors.
+The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%) were labeled as active N. gonorrhoeae inhibitor compounds. They used this dataset to build a naïve Bayesian model and used it to screen a commercial library. With this method, they identified and validated two hits. We have used the dataset to build a model using LazyQSAR with CheMeleon Embeddings as molecular descriptors, with AUROC of 0.86 (5-fold crossvalidation).
 
 This model was incorporated on 2024-01-03.Last packaged on 2025-08-27.
 
