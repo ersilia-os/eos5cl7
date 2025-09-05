@@ -2,7 +2,7 @@
 
 The authors curated a dataset of 282 compounds from ChEMBL, of which 160 (56.7%) were labeled as active N. gonorrhoeae inhibitor compounds. They used this dataset to build a naïve Bayesian model and used it to screen a commercial library. With this method, they identified and validated two hits. We have used the dataset to build a model using LazyQSAR with CheMeleon Embeddings as molecular descriptors, with AUROC of 0.86 (5-fold crossvalidation).
 
-This model was incorporated on 2024-01-03.Last packaged on 2025-09-02.
+This model was incorporated on 2024-01-03.Last packaged on 2025-09-05.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `82`
 - **Environment Size (Mb):** `7865`
-- **Image Size (Mb):** `8111.46`
+- **Image Size (Mb):** `7864.83`
 
 **Computational Performance (seconds):**
-- 10 inputs: `32.39`
-- 100 inputs: `24.23`
-- 10000 inputs: `396.03`
+- 10 inputs: `65.16`
+- 100 inputs: `26.68`
+- 10000 inputs: `415.12`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
