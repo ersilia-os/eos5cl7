@@ -2,7 +2,7 @@
 import os
 import csv
 import sys
-import lazyqsar
+from lazyqsar.qsar import LazyBinaryQSAR
 
 input_file = sys.argv[1]
 output_file = sys.argv[2]
@@ -16,10 +16,8 @@ with open(input_file, "r") as f:
     smiles_list = [r[0] for r in reader]
 
 def predict(smiles_list, model_path):
-    model = lazyqsar.LazyBinaryClassifier.load_model(model_path)
-    chemeleon = lazyqsar.descriptors.ChemeleonDescriptor()
-    X = chemeleon.transform(smiles_list)
-    y_hat = model.predict_proba(X=X)[:,1]
+    model = LazyBinaryQSAR.load(model_path)
+    y_hat = model.predict_proba(smiles_list=smiles_list)[:, 1]
     return y_hat
 
 
