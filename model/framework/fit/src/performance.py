@@ -19,7 +19,7 @@ model_dir = os.path.abspath(os.path.join(root, "..", "..", "..","checkpoints"))
 
 
 def plot_yhat(ax,name):
-    with open(os.path.join(model_dir, f"{name}", "report.json"), 'r') as f:
+    with open(os.path.join(model_dir, f"{name}", "report_crossval.json"), 'r') as f:
         results = json.load(f)
     y_hat = np.array(results["0"]['y_hat'])
     y_true = np.array(results["0"]['y_true'])
@@ -46,7 +46,7 @@ def plot_yhat(ax,name):
     ax.set_title(name)
 
 def plot_roc_curve(ax, name):
-    with open(os.path.join(model_dir, f"{name}", "report.json"), 'r') as f:
+    with open(os.path.join(model_dir, f"{name}", "report_crossval.json"), 'r') as f:
         results = json.load(f)
     tprs = []
     aucs = []
@@ -84,4 +84,4 @@ ax = axs.next()
 plot_yhat(ax, "model")
 
 plt.tight_layout()
-st.save_figure(os.path.join("../results", "performance_5fold.png"))
+st.save_figure(os.path.join("../results", "performance_5fold_v3.png"))
