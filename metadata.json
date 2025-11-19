@@ -40,7 +40,7 @@
     "Contributor": "Richiio",
     "Incorporation Date": "2024-01-03",
     "Last Packaging Date": "2025-11-18",
-    "Release": "v2.0.0",
+    "Release": "v3.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos5cl7",
     "Docker Architecture": [
