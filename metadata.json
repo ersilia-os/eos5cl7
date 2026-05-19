@@ -23,8 +23,7 @@
     "Interpretation": "Probability of activity for the inhibition of the pathogen N. gonorrhoeae",
     "Tag": [
         "Antimicrobial activity",
-        "ChEMBL",
-        "N.gonorrhoeae"
+        "ChEMBL"
     ],
     "Biomedical Area": [
         "Gonorrhea"
