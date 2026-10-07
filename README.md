@@ -1,6 +1,6 @@
 # Growth Inhibitors of Neisseria gonorrhoeae
 
-Identifies compounds capable of arresting Neisseria gonorrhoeae, an organism that has acquired resistance to successive treatment regimens and now threatens the last reliable options. Pereira and colleagues combined Bayesian machine learning with phenotypic screening data, then tested predicted actives experimentally and recovered confirmed growth inhibitors. Training data reflect the compound classes that have been screened against this pathogen, which remain narrow compared with the antibacterial literature as a whole.
+Predicts growth inhibition of Neisseria gonorrhoeae, a pathogen that has shed one treatment regimen after another and now presses on the last dependable options. Pereira and co-workers curated 282 compounds from ChEMBL whole-cell MIC data, 160 of them active at or below 8 micrograms per millilitre, trained a naive Bayesian classifier and screened a commercial library, confirming two new chemotypes. Ersilia rebuilt the model from that training set with LazyQSAR over CheMeleon embeddings, reaching an AUROC of 0.86 in five-fold cross-validation.
 
 This model was incorporated on 2024-01-03.Last packaged on 2025-11-18.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2024-01-03.Last packaged on 2025-11-18.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that a compound inhibits growth of Neisseria gonorrhoeae.
+- **Interpretation:** Probability of inhibiting Neisseria gonorrhoeae growth, with actives defined by a MIC at or below 8 micrograms per millilitre.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
