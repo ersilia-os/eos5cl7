@@ -2,35 +2,36 @@ Identifier: eos5cl7
 Slug: ngonorrhoeae-inhibition
 Status: Ready
 Title: Growth Inhibitors of Neisseria gonorrhoeae
-Description: Predicts growth inhibition of Neisseria gonorrhoeae, a pathogen that
-  has shed one treatment regimen after another and now presses on the last dependable
-  options. Pereira and co-workers curated 282 compounds from ChEMBL whole-cell MIC
-  data, 160 of them active at or below 8 micrograms per millilitre, trained a naive
-  Bayesian classifier and screened a commercial library, confirming two new chemotypes.
-  Ersilia rebuilt the model from that training set with LazyQSAR over CheMeleon embeddings,
-  reaching an AUROC of 0.86 in five-fold cross-validation.
+Description: Predicts growth inhibition of Neisseria gonorrhoeae, a pathogen 
+  that has shed one treatment regimen after another and now presses on the last 
+  dependable options. Pereira and co-workers curated 282 compounds from ChEMBL 
+  whole-cell MIC data, 160 of them active at or below 8 micrograms per 
+  millilitre, trained a naive Bayesian classifier and screened a commercial 
+  library, confirming two new chemotypes. Ersilia rebuilt the model from that 
+  training set with LazyQSAR over CheMeleon embeddings, reaching an AUROC of 
+  0.86 in five-fold cross-validation.
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: Internal
 Task: Annotation
 Subtask: Activity prediction
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Score
+  - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Probability of inhibiting Neisseria gonorrhoeae growth, with actives
-  defined by a MIC at or below 8 micrograms per millilitre.
+Interpretation: Probability of inhibiting Neisseria gonorrhoeae growth, with 
+  actives defined by a MIC at or below 8 micrograms per millilitre.
 Tag:
-- Antimicrobial activity
-- ChEMBL
+  - Antimicrobial activity
+  - ChEMBL
 Biomedical Area:
-- Gonorrhea
+  - Gonorrhea
 Target Organism:
-- Neisseria gonorrhoeae
+  - Neisseria gonorrhoeae
 Publication Type: Peer reviewed
 Publication Year: 2020
 Publication: https://doi.org/10.1007/s11095-020-02876-y
@@ -43,8 +44,8 @@ Release: v3.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos5cl7
 Docker Architecture:
-- AMD64
-- ARM64
+  - AMD64
+  - ARM64
 Model Size: 81.0
 Environment Size: 7610.0
 Image Size: 7583.85
