@@ -14,7 +14,7 @@ This model was incorporated on 2024-01-03.Last packaged on 2025-11-18.
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `Gonorrhea`
 - **Target Organism:** `Neisseria gonorrhoeae`
-- **Tags:** `Antimicrobial activity`, `ChEMBL`, `N.gonorrhoeae`
+- **Tags:** `Antimicrobial activity`, `ChEMBL`
 
 ### Input
 - **Input:** `Compound`
