@@ -1,8 +1,9 @@
 # Growth Inhibitors of Neisseria gonorrhoeae
 
-Predicts growth inhibition of Neisseria gonorrhoeae, a pathogen that has shed one treatment regimen after another and now presses on the last dependable options. Pereira and co-workers curated 282 compounds from ChEMBL whole-cell MIC data, 160 of them active at or below 8 micrograms per millilitre, trained a naive Bayesian classifier and screened a commercial library, confirming two new chemotypes. Ersilia rebuilt the model from that training set with LazyQSAR over CheMeleon embeddings, reaching an AUROC of 0.86 in five-fold cross-validation.
+Predicts growth inhibition of Neisseria gonorrhoeae, a pathogen that has shed one treatment regimen after another and now presses on the last dependable options. Pereira and co-workers curated 282 compounds from ChEMBL whole-cell MIC data, 160 of them active at or below 8 micrograms per millilitre, trained a naive Bayesian classifier and screened a commercial library, confirming two new chemotypes. Ersilia rebuilt the model from that training set with LazyQSAR over CheMeleon, CLAMP and RDKit descriptors, reaching an AUROC of 0.84 in five-fold cross-validation.
 
-This model was incorporated on 2024-01-03.Last packaged on 2026-10-28.
+This model was incorporated on 2024-01-03.
+Last packaged on 2026-10-28.
 
 ## Information
 ### Identifiers
@@ -23,12 +24,12 @@ This model was incorporated on 2024-01-03.Last packaged on 2026-10-28.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of inhibiting Neisseria gonorrhoeae growth, with actives defined by a MIC at or below 8 micrograms per millilitre.
+- **Interpretation:** Rank score of inhibiting Neisseria gonorrhoeae growth (MIC at or below 8 micrograms per millilitre), calibrated against the Ersilia reference library of 50K compounds, where 0.65 beats 99% of it.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| ngonorrhoeae_inhibition_probability | float | high | Predicted probability of inhibiting the growth of Neisseria gonorrhoeae |
+| ngonorrhoeae_inhibition_rank | float | high | Rank score of how likely the compound is to inhibit the growth of Neisseria gonorrhoeae with a MIC at or below 8 micrograms per millilitre. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
 
 
 ### Source and Deployment
