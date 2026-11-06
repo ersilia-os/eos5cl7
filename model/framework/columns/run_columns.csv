@@ -1,2 +1,2 @@
 name,type,direction,description
-ngonorrhoeae_inhibition_probability,float,high,Predicted probability of inhibiting the growth of Neisseria gonorrhoeae
+ngonorrhoeae_inhibition_rank,float,high,Rank score of how likely the compound is to inhibit the growth of Neisseria gonorrhoeae with a MIC at or below 8 micrograms per millilitre. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.

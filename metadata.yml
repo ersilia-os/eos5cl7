@@ -8,8 +8,8 @@ Description: Predicts growth inhibition of Neisseria gonorrhoeae, a pathogen
   whole-cell MIC data, 160 of them active at or below 8 micrograms per 
   millilitre, trained a naive Bayesian classifier and screened a commercial 
   library, confirming two new chemotypes. Ersilia rebuilt the model from that 
-  training set with LazyQSAR over CheMeleon embeddings, reaching an AUROC of 
-  0.86 in five-fold cross-validation.
+  training set with LazyQSAR over CheMeleon, CLAMP and RDKit descriptors, 
+  reaching an AUROC of 0.84 in five-fold cross-validation.
 Deployment:
   - Local
 Source: Local
@@ -23,8 +23,9 @@ Output:
   - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Probability of inhibiting Neisseria gonorrhoeae growth, with 
-  actives defined by a MIC at or below 8 micrograms per millilitre.
+Interpretation: Rank score of inhibiting Neisseria gonorrhoeae growth (MIC at or
+  below 8 micrograms per millilitre), calibrated against the Ersilia reference 
+  library of 50K compounds, where 0.65 beats 99% of it.
 Tag:
   - Antimicrobial activity
   - ChEMBL
