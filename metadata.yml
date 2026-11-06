@@ -41,7 +41,7 @@ License: GPL-3.0-only
 Contributor: Richiio
 Incorporation Date: '2024-01-03'
 Last Packaging Date: '2026-11-06'
-Release: v3.1.0
+Release: v4.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5cl7.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos5cl7
 Docker Architecture:
