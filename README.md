@@ -3,7 +3,7 @@
 Predicts growth inhibition of Neisseria gonorrhoeae, a pathogen that has shed one treatment regimen after another. Pereira and co-workers curated 282 compounds from ChEMBL whole-cell MIC data, 160 of them active at or below 8 micrograms per millilitre, trained a naive Bayesian classifier and screened a commercial library, confirming two new chemotypes. Ersilia rebuilt the model from that training set (265 compounds, 146 active) with LazyQSAR, with a five-fold out-of-fold AUROC of 0.84. The small training set limits the chemistry covered.
 
 This model was incorporated on 2024-01-03.
-Last packaged on 2026-11-06.
+Last packaged on 2026-11-23.
 
 ## Information
 ### Identifiers
@@ -43,12 +43,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `90`
 - **Environment Size (Mb):** `6954`
-- **Image Size (Mb):** `3578.56`
+- **Image Size (Mb):** `3287.42`
 
 **Computational Performance (seconds):**
-- 10 inputs: `40.03`
-- 100 inputs: `34.36`
-- 10000 inputs: `821.44`
+- 10 inputs: `34.54`
+- 100 inputs: `27.09`
+- 10000 inputs: `193.69`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
