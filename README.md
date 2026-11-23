@@ -1,6 +1,6 @@
 # Growth Inhibitors of Neisseria gonorrhoeae
 
-Predicts growth inhibition of Neisseria gonorrhoeae, a pathogen that has shed one treatment regimen after another and now presses on the last dependable options. Pereira and co-workers curated 282 compounds from ChEMBL whole-cell MIC data, 160 of them active at or below 8 micrograms per millilitre, trained a naive Bayesian classifier and screened a commercial library, confirming two new chemotypes. Ersilia rebuilt the model from that training set with LazyQSAR over CheMeleon, CLAMP and RDKit descriptors, reaching an AUROC of 0.84 in five-fold cross-validation.
+Predicts growth inhibition of Neisseria gonorrhoeae, a pathogen that has shed one treatment regimen after another. Pereira and co-workers curated 282 compounds from ChEMBL whole-cell MIC data, 160 of them active at or below 8 micrograms per millilitre, trained a naive Bayesian classifier and screened a commercial library, confirming two new chemotypes. Ersilia rebuilt the model from that training set (265 compounds, 146 active) with LazyQSAR, with a five-fold out-of-fold AUROC of 0.84. The small training set limits the chemistry covered.
 
 This model was incorporated on 2024-01-03.
 Last packaged on 2026-11-06.
