@@ -47,7 +47,7 @@ DockerHub: https://hub.docker.com/r/ersiliaos/eos5cl7
 Docker Architecture:
   - AMD64
   - ARM64
-Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos5cl7_v4.sif
+Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos5cl7_v5.sif
 Model Size: 90.0
 Environment Size: 6954.0
 Image Size: 3287.42
